@@ -1,0 +1,483 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #7F5539;
+}
+
+#main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  padding-left: 2em;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
+#main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-nav li {
+  padding: 1rem 1.5rem;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #E07A5F;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+}
+
+#main-nav a:hover {
+  border-color: #ccc;
+  color: #e9dada;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main-nav a.current {
+  border-color: #7F5539;
+}
+
+#header-home {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../img/bandstudio.jpeg") no-repeat center right/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../img/bandstudio.jpeg") no-repeat center right/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#header-home .header-content {
+  text-align: center;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  margin: 20px;
+  border: solid white;
+  margin: 50px;
+  padding: 1.3em;
+}
+
+#header-home .header-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.donkeys {
+  color: #ada3a3;
+}
+
+.newalbum {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.newalbum a {
+  color: #fff;
+}
+
+.album {
+  background: #7F5539;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 4em 3em 4em;
+  font-family: "Montserrat";
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.albumcover {
+  background: url("../img/dingle2.jpeg");
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+  padding: 2em;
+  margin: 2em;
+  -webkit-box-shadow: 10px 10px 30px #1d1c1c;
+          box-shadow: 10px 10px 30px #1d1c1c;
+}
+
+#bandname {
+  font-family: 'Kiwi Maru', serif;
+  letter-spacing: .5em;
+}
+
+#line {
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7em;
+}
+
+#dingle {
+  font-family: 'Kiwi Maru', serif;
+  padding-top: .3em;
+  font-size: 1.2em;
+}
+
+.albumblurb {
+  text-align: center;
+  padding: 2em;
+  margin: 2em;
+  font-size: 1.3em;
+}
+
+.albumblurb h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 1.2em;
+  padding-top: .5em;
+}
+
+.albumblurb #line2 {
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.btn1 {
+  height: 100px;
+  background: #333;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 0 0 #B08968;
+          box-shadow: inset 0 0 0 0 #B08968;
+  font-size: 2rem;
+  position: relative;
+  padding: .5em;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn1 a {
+  color: #fff;
+}
+
+.btn1:hover {
+  background: #252424;
+}
+
+.interact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (4, 1fr)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 4, 1fr);
+  grid-auto-rows: 400px 400px;
+  grid-gap: 10px;
+  background: #fff;
+  padding: 2em;
+  grid-auto-flow: dense;
+}
+
+.interact a {
+  color: #fff;
+}
+
+.interact a:hover {
+  color: #333;
+}
+
+.gallery-container {
+  -webkit-box-shadow: 10px 10px 30px #1d1c1c;
+          box-shadow: 10px 10px 30px #1d1c1c;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item .interact-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item .interact-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-item:hover .interact-image img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.gallery-item .text {
+  position: absolute;
+  font-size: 3em;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px solid white;
+  padding: 1.3rem 2rem 1.3rem 2rem;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#band {
+  background: #000;
+}
+
+.cards {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.img1 {
+  background-image: url("../img/squirt.jpeg");
+}
+
+.img2 {
+  background-image: url("../img/drummer.jpeg");
+}
+
+.img3 {
+  background-image: url("../img/monkey.jpeg");
+}
+
+.img4 {
+  background-image: url("../img/esquire.png");
+}
+
+.bandheading {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  padding: 2rem 0 1rem 0;
+  color: #fff;
+  background: #000;
+}
+
+.cards {
+  border: 1px solid #fff;
+}
+
+.card {
+  background: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 300px;
+          flex: 1 0 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 2px 14px rgba(38, 38, 49, 0.4);
+          box-shadow: 3px 2px 14px rgba(38, 38, 49, 0.4);
+  max-width: 450px;
+}
+
+.card_content {
+  padding: 1rem;
+}
+
+.card .card_image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.card_title {
+  letter-spacing: .3rem;
+  padding-bottom: .3rem;
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.w-3 {
+  grid-column: span 3;
+}
+
+.w-4 {
+  grid-column: span 4;
+}
+
+.h-2 {
+  grid-row: span 2;
+}
+
+.h-3 {
+  grid-row: span 3;
+}
+
+.h-4 {
+  grid-row: span 4;
+}
+
+.h-5 {
+  grid-row: span 5;
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.w-3 {
+  grid-column: span 3;
+}
+
+.w-4 {
+  grid-column: span 4;
+}
+
+.w-5 {
+  grid-column: span 5;
+}
+
+.w-6 {
+  grid-column: span 6;
+}
+
+.tourbody {
+  background: url("../img/field.jpeg");
+  color: #fff;
+}
+
+.tourheader {
+  font-size: 2em;
+}
+
+main {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(1.5px);
+          backdrop-filter: blur(1.5px);
+}
+
+.tourdates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2em;
+}
+
+.aboutbody {
+  background: #333;
+}
+
+.about {
+  border: 3px solid white;
+  padding: 1.5em;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.aboutheader {
+  background: url("../img/aboutimg.jpeg");
+  color: #ffff;
+  padding: 10em;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.reviews {
+  background: #fff;
+}
+
+.blurb {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 2em;
+}
+
+.quote {
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+  text-align: center;
+}
+
+footer {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.wrapper {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.wrapper > * {
+  padding: 1em;
+}
+
+.wrapper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.labelinfo {
+  text-align: center;
+}
+
+.labelinfo span {
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

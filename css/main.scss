@@ -398,6 +398,25 @@ main {
 .reviews {
     background: rgb(145, 138, 138);
 
+    h1 {
+        text-align: center;
+        padding-top: 1.3em;
+        font-size: 2em;
+    }
+}
+
+.separator {
+    border-bottom: 2px solid #fff;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 1em 0 1em 0;
+}
+
+.quotewrapper {
+    
+    display: flex;
+    padding: 1.4em;
+
 }
 
 .blurb {
@@ -408,8 +427,6 @@ main {
 
 .quote {
     padding: 1.5em;
-    display: flex;
-    flex-direction: column;
     flex: 1 0 100px;
     text-align: center;
 
@@ -474,6 +491,7 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px;
         font-size: 1.4em;
+        color: #fff;
 
         label {
             display: block;
@@ -540,10 +558,8 @@ footer {
 }
 
 .covers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;;
-    gap: 20px;
-    grid-auto-flow: dense;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cover {

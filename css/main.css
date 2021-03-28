@@ -29,6 +29,7 @@ body {
   padding-left: 2em;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
+  font-size: 1.2em;
 }
 
 #main-nav ul {
@@ -428,7 +429,7 @@ main {
 }
 
 .reviews {
-  background: #fff;
+  background: #918a8a;
 }
 
 .blurb {
@@ -454,10 +455,10 @@ main {
 
 footer {
   line-height: 1.6;
+  height: 450px;
 }
 
 .contact-container {
-  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 1em;
@@ -480,6 +481,7 @@ footer {
 .labelinfo {
   text-align: center;
   background: #7F5539;
+  font-size: 1.5em;
   margin: 0 0 1rem 0;
 }
 
@@ -489,16 +491,19 @@ footer {
 
 footer {
   font-family: "Dosis", sans-serif;
-  background: #B08968;
+  background: #fff;
+  height: 500px;
 }
 
 .contact {
   background: #333;
+  height: 100%;
 }
 
 .contact h3 {
   font-size: 3em;
   text-align: center;
+  color: #fff;
 }
 
 .contact form {
@@ -549,22 +554,43 @@ footer {
   transition: background-color .5s ease-out;
 }
 
-.album {
+.musicbody {
+  background: #333;
+}
+
+.musicheader {
+  background: url("../img/musicbg.jpeg");
+  color: #ffff;
+  padding: 10em;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.albums h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+
+.covers {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-auto-flow: dense;
 }
 
 .cover {
   background-size: cover;
-  height: 350px;
-  width: 350px;
   padding: 2em;
   margin: 2em;
   -webkit-box-shadow: 10px 10px 30px #1d1c1c;
           box-shadow: 10px 10px 30px #1d1c1c;
   color: #fff;
+  height: 350px;
+  width: 350px;
   font-size: 1.4em;
 }
 
@@ -584,6 +610,10 @@ footer {
 .cover2 {
   background: url("../img/models.jpeg");
   color: #918282;
+}
+
+.cover3 {
+  background: url("../img/dingle2.jpeg");
 }
 
 .albumtitle {

@@ -14,6 +14,7 @@ body{
     background: rgba(0,0,0,0.2);
     padding-left: 2em;
     backdrop-filter: blur(8px);
+    font-size: 1.2em;
 
     ul {
         display: flex;
@@ -395,7 +396,7 @@ main {
 }
 
 .reviews {
-    background: #fff;
+    background: rgb(145, 138, 138);
 
 }
 
@@ -421,10 +422,10 @@ main {
 
 footer {
     line-height: 1.6;
+    height: 450px;
 }
 
 .contact-container {
-    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
@@ -446,6 +447,7 @@ footer {
 .labelinfo {
     text-align: center;
     background: $main-color;
+    font-size: 1.5em;
     margin: 0 0 1rem 0;
     span {
         color: #fff;
@@ -454,14 +456,18 @@ footer {
 
 footer {
     font-family: $main-font;
-    background: $light-color;
+    background: #fff;
+    height: 500px;
+    
 }
 
 .contact {
     background: $dark-color;
+    height: 100%;
     h3 {
         font-size: 3em;
         text-align: center;
+        color: #fff;
     }
     form {
         display: grid;
@@ -510,19 +516,44 @@ footer {
 
 //music page //
 
-.album {
+.musicbody {
+    background: $dark-color;
+}
+
+.musicheader {
+    background: url('../img/musicbg.jpeg');
+    color: #ffff;
+    padding: 10em;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.albums {
+    
+    h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 3em;
+    }
+}
+
+.covers {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;;
+    gap: 20px;
+    grid-auto-flow: dense;
 }
 
 .cover {
     background-size: cover;
-    height: 350px;
-    width: 350px;
     padding: 2em;
     margin: 2em;
     box-shadow: $drop-shadow;
     color: #fff;
+    height: 350px;
+    width: 350px;
     font-size: 1.4em;
 }
 .cover1 {
@@ -539,6 +570,10 @@ footer {
 .cover2 {
     background: url('../img/models.jpeg');
     color: rgb(145, 130, 130);
+}
+
+.cover3 {
+    background: url('../img/dingle2.jpeg');
 }
 
 .albumtitle {
